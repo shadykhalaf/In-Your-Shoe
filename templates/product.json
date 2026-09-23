@@ -1,3 +1,12 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
 {
   "sections": {
     "main": {
@@ -35,13 +44,6 @@
           "type": "separator",
           "settings": {}
         },
-        "description_1": {
-          "type": "description",
-          "settings": {
-            "collapse_content": true,
-            "show_below_gallery": false
-          }
-        },
         "quantity_selector_1": {
           "type": "quantity_selector",
           "settings": {}
@@ -50,7 +52,18 @@
           "type": "buy_buttons",
           "settings": {
             "show_payment_button": true,
-            "show_gift_card_recipient": false
+            "show_gift_card_recipient": false,
+            "atc_button_background": "",
+            "atc_button_text_color": "",
+            "payment_button_background": "",
+            "payment_button_text_color": ""
+          }
+        },
+        "description_1": {
+          "type": "description",
+          "settings": {
+            "collapse_content": true,
+            "show_below_gallery": false
           }
         },
         "accordion_care": {
@@ -59,7 +72,9 @@
             "show_below_gallery": false,
             "icon": "none",
             "title": "Care Guide",
-            "liquid": "{%- if product.metafields.descriptors.care_guide != blank -%}{{ product.metafields.descriptors.care_guide.value }}{%- endif -%}"
+            "content": "<p>Share some content to your customers about your products.</p>",
+            "liquid": "{%- if product.metafields.descriptors.care_guide != blank -%}{{ product.metafields.descriptors.care_guide.value }}{%- endif -%}",
+            "page": ""
           }
         },
         "accordion_shipping": {
@@ -68,7 +83,9 @@
             "show_below_gallery": false,
             "icon": "none",
             "title": "Shipping Policy",
-            "content": ""
+            "content": "<p><strong>We deliver across Egypt and globally!<br/></strong><br/>🚚 Local delivery across Egypt in 3-5 business days.<br/>⚡ Same-Day Delivery Service available in Cairo & Giza.<br/>🌍 International shipping in 7-10 business days.<br/><br/><em><strong>NO</strong></em> deliveries on Fridays or holidays!<br/><br/><strong>▸ </strong>Read <a href=\"https://inyourshoe.com/pages/shipping-policy\" target=\"_blank\" title=\"Shipping Policy\"><strong>Shipping Policy</strong></a> for more info.<br/><em>Terms and Conditions applied!</em> © <a href=\"https://inyourshoe.com/\"><strong>IN YOUR SHOE</strong></a></p>",
+            "liquid": "",
+            "page": ""
           }
         },
         "accordion_exchange": {
@@ -77,7 +94,9 @@
             "show_below_gallery": false,
             "icon": "none",
             "title": "Exchange & Refund",
-            "content": ""
+            "content": "<p>We want you to be completely satisfied with your purchase! If, for any reason, you're not: we offer easy post-purchase actions.</p><p><strong>▸ </strong><a href=\"https://in-your-shoe.odoo.com/exchange-refund-policy\" target=\"_blank\" title=\"IYS Exchange & Refund Policy\"><span style=\"text-decoration:underline\"><strong>Read full Exchange & Refund Policy</strong></span></a><br/><em>Terms and Conditions applied!</em> © <a href=\"https://inyourshoe.com/\"><strong>IN YOUR SHOE</strong></a></p>",
+            "liquid": "",
+            "page": ""
           }
         },
         "share_buttons_1": {
@@ -103,20 +122,49 @@
         "price_1",
         "rating_1",
         "separator_1",
-        "description_1",
         "quantity_selector_1",
         "buy_buttons_1",
+        "description_1",
         "accordion_care",
         "accordion_shipping",
         "accordion_exchange",
         "share_buttons_1",
         "complementary_1"
       ],
-      "settings": {}
+      "settings": {
+        "color_scheme": "",
+        "allow_transparent_header": false,
+        "transparent_header_use_primary_colors": false,
+        "container_size": "lg",
+        "product_info_size": 35,
+        "show_sticky_add_to_cart": true,
+        "center_basic_info": false,
+        "desktop_media_layout": "grid",
+        "desktop_media_grid_gap": 30,
+        "mobile_controls": "dots",
+        "enable_media_autoplay": false,
+        "enable_video_looping": true,
+        "enable_image_zoom": true,
+        "max_image_zoom_level": 3
+      }
     },
     "related-products": {
       "type": "related-products",
-      "settings": {}
+      "settings": {
+        "color_scheme": "",
+        "separate_section_with_border": true,
+        "hide_product_information": false,
+        "stack_products": false,
+        "recommendations_count": 10,
+        "products_per_row_mobile": "2",
+        "products_per_row_desktop": 4,
+        "horizontal_spacing_factor": 1,
+        "vertical_spacing_factor": 1,
+        "subheading": "",
+        "title": "Related products",
+        "heading_style": "h2",
+        "content": ""
+      }
     }
   },
   "order": [
