@@ -31,6 +31,12 @@
             "rating_mode": "rating"
           }
         },
+        "model_sizes_1": {
+          "type": "liquid",
+          "settings": {
+            "liquid": "{%- assign model_mf = product.metafields.custom.model -%}{%- if model_mf != blank -%}<div class=\"feature-badge\" style=\"background:#EDF2EA;padding:12px 14px;border-radius:4px;display:flex;gap:10px;align-items:flex-start;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#222222\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;margin-top:2px;\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\"></line></svg><span style=\"font-size:0.875rem;color:#222222;line-height:1.5;\">{{ model_mf.value }}</span></div>{%- endif -%}"
+          }
+        },
         "separator_1": {
           "type": "separator",
           "settings": {}
@@ -42,6 +48,14 @@
             "show_below_gallery": false
           }
         },
+        "variant_picker_1": {
+          "type": "variant_picker",
+          "settings": {
+            "hide_sold_out_variants": false,
+            "selector_style": "block",
+            "swatch_selector_style": "swatch"
+          }
+        },
         "quantity_selector_1": {
           "type": "quantity_selector",
           "settings": {}
@@ -51,6 +65,15 @@
           "settings": {
             "show_payment_button": true,
             "show_gift_card_recipient": false
+          }
+        },
+        "accordion_size_chart": {
+          "type": "accordion",
+          "settings": {
+            "show_below_gallery": false,
+            "icon": "none",
+            "title": "Size Chart",
+            "liquid": "{%- assign sc = product.metafields.custom.size_chart -%}{%- if sc != blank -%}{{ sc | image_url: width: 800 | image_tag: loading: 'lazy', style: 'max-width:100%;height:auto;display:block;', alt: product.title }}{%- endif -%}"
           }
         },
         "accordion_care": {
@@ -102,10 +125,13 @@
         "sku_1",
         "price_1",
         "rating_1",
+        "model_sizes_1",
         "separator_1",
         "description_1",
+        "variant_picker_1",
         "quantity_selector_1",
         "buy_buttons_1",
+        "accordion_size_chart",
         "accordion_care",
         "accordion_shipping",
         "accordion_exchange",

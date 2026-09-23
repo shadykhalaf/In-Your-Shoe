@@ -154,19 +154,27 @@
 {%- if section.settings.show_sticky_add_to_cart and product.available -%}
   <product-rerender id="{{ product_form_id }}-sticky-bar" observe-form="{{ product_form_id }}">
     <product-sticky-bar form="{{ product_form_id }}" class="product-sticky-bar">
-      <div class="product-sticky-bar__info sm-max:hidden">
-        <div class="h-stack gap-6">
+      <div class="product-sticky-bar__info">
+        <div class="h-stack gap-5">
           {%- if product.media.size > 0 -%}
             {%- assign default_media = product.selected_or_first_available_variant.featured_media | default: product.featured_media -%}
             {{- default_media | image_url: width: default_media.width | image_tag: loading: 'lazy', sizes: '60px', widths: '60,120,180' -}}
           {%- endif -%}
 
-          <div class="v-stack">
+          <div class="v-stack gap-1">
             <span class="h6">{{ product.title }}</span>
 
             {%- if product.selected_or_first_available_variant != null -%}
               {%- render 'price-list', variant: product.selected_or_first_available_variant, hide_unit_price: true, context: 'card' -%}
             {%- endif -%}
+
+            {%- unless product.has_only_default_variant -%}
+              <p class="text-sm text-subdued">
+                {{- product.selected_or_first_available_variant.title -}}
+                &nbsp;&middot;&nbsp;
+                <a href="#buy-buttons" class="link" style="color:inherit;">Change</a>
+              </p>
+            {%- endunless -%}
           </div>
         </div>
       </div>

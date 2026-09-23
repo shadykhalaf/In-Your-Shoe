@@ -1,0 +1,70 @@
+/* =========================================================
+   In Your Shoe — Sticky ATC overrides
+   Adds mobile layout + info visibility on all screen sizes
+   ========================================================= */
+
+/* Mobile: make sticky bar a flex row so info and button are side by side */
+@media screen and (max-width: 699px) {
+  .product-sticky-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    background: rgb(var(--background));
+    border-top: 1px solid rgba(var(--color-foreground, 0 0 0), 0.08);
+    box-shadow: 0 -2px 12px rgba(0,0,0,0.06);
+    padding: 10px var(--container-gutter);
+  }
+
+  /* Give info section most of the space */
+  .product-sticky-bar__info {
+    flex: 1 1 auto;
+    min-width: 0; /* allows truncation to work */
+  }
+
+  /* Shrink the ATC button on mobile so info has space */
+  .product-sticky-bar .buy-buttons {
+    flex: 0 0 auto;
+    width: 40%;
+    max-width: 140px;
+  }
+
+  /* Make the button text and padding smaller */
+  .product-sticky-bar .buy-buttons button {
+    padding-inline: 12px;
+    font-size: 0.75rem;
+    min-height: 40px;
+  }
+
+  /* Compact product image in sticky bar on mobile */
+  .product-sticky-bar__info img {
+    width: 2.75rem;
+    height: 2.75rem;
+    object-fit: cover;
+    border-radius: 4px;
+  }
+
+  /* Truncate long product title */
+  .product-sticky-bar__info .h6 {
+    font-size: 0.8125rem;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 140px;
+  }
+
+  /* Variant + Change text size */
+  .product-sticky-bar__info .text-sm {
+    font-size: 0.75rem;
+  }
+}
+
+/* Desktop: keep info from overflowing */
+@media screen and (min-width: 700px) {
+  .product-sticky-bar__info .h6 {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    max-width: 280px;
+  }
+}

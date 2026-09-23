@@ -5510,7 +5510,7 @@ _ProductStickyBar_instances = new WeakSet();
 onFormVisibilityChange_fn = function(entries) {
   const [formEntry, footerEntry] = [entries.find((entry) => entry.target === __privateGet(this, _formElement)), entries.find((entry) => entry.target === __privateGet(this, _footerElement))];
   if (formEntry) {
-    __privateSet(this, _latestFormCondition, !formEntry.isIntersecting && formEntry.boundingClientRect.bottom < 0);
+    __privateSet(this, _latestFormCondition, !formEntry.isIntersecting);
   }
   if (footerEntry) {
     __privateSet(this, _latestFooterCondition, !footerEntry.isIntersecting);
