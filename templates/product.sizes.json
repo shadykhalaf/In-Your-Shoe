@@ -40,8 +40,22 @@
             "rating_mode": "rating"
           }
         },
+        "feature_with_icon_LCFbxq": {
+          "type": "feature_with_icon",
+          "settings": {
+            "text": "{{ product.metafields.custom.model.value }}",
+            "link": "",
+            "icon": "none",
+            "custom_icon": "{{ product.featured_image }}",
+            "icon_width": 24,
+            "background": "#EFEDED",
+            "text_color": "#6b6b6b",
+            "border_color": "#7F7D7D"
+          }
+        },
         "model_sizes_1": {
           "type": "liquid",
+          "disabled": true,
           "settings": {
             "liquid": "{%- assign model_mf = product.metafields.custom.model -%}{%- if model_mf != blank -%}<div class=\"feature-badge\" style=\"background:#EDF2EA;padding:12px 14px;border-radius:4px;display:flex;gap:10px;align-items:flex-start;\"><svg xmlns=\"http://www.w3.org/2000/svg\" width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"#222222\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" style=\"flex-shrink:0;margin-top:2px;\"><circle cx=\"12\" cy=\"12\" r=\"10\"></circle><line x1=\"12\" y1=\"8\" x2=\"12\" y2=\"12\"></line><line x1=\"12\" y1=\"16\" x2=\"12.01\" y2=\"16\"></line></svg><span style=\"font-size:0.875rem;color:#222222;line-height:1.5;\">{{ model_mf.value }}</span></div>{%- endif -%}"
           }
@@ -149,6 +163,7 @@
         "sku_1",
         "price_1",
         "rating_1",
+        "feature_with_icon_LCFbxq",
         "model_sizes_1",
         "separator_1",
         "variant_picker_1",
