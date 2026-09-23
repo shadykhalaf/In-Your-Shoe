@@ -90,6 +90,15 @@
             "payment_button_text_color": ""
           }
         },
+        "inventory_WeBdei": {
+          "type": "inventory",
+          "settings": {
+            "show_in_stock_quantity": true,
+            "low_inventory_threshold": 10,
+            "show_progress_bar": true,
+            "progress_bar_max_value": 50
+          }
+        },
         "description_1": {
           "type": "description",
           "settings": {
@@ -169,6 +178,7 @@
         "variant_picker_1",
         "quantity_selector_1",
         "buy_buttons_1",
+        "inventory_WeBdei",
         "description_1",
         "accordion_size_chart",
         "accordion_care",
