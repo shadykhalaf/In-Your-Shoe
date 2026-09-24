@@ -17,9 +17,9 @@
         "icon-1": {
           "type": "item",
           "settings": {
-            "icon": "picto-award-gift",
-            "icon_width": 24,
-            "mobile_icon_width": 24,
+            "icon": "picto-delivery-truck",
+            "icon_width": 32,
+            "mobile_icon_width": 36,
             "title": "Free Delivery Over 2,499 EGP",
             "content": ""
           }
@@ -27,27 +27,28 @@
         "icon-2": {
           "type": "item",
           "settings": {
-            "icon": "picto-award-gift",
+            "icon": "picto-customer-support",
             "icon_width": 24,
-            "mobile_icon_width": 24,
-            "title": "Satisfied or refunded",
-            "content": "<p>Short content about your store</p>"
+            "mobile_icon_width": 36,
+            "title": "Online Support",
+            "content": ""
           }
         },
         "icon-3": {
           "type": "item",
           "settings": {
-            "icon": "picto-award-gift",
-            "icon_width": 24,
-            "mobile_icon_width": 24,
-            "title": "Top-notch support",
-            "content": "<p>Short content about your store</p>"
+            "icon": "picto-money",
+            "icon_width": 36,
+            "mobile_icon_width": 36,
+            "title": "Money Guarantee",
+            "content": ""
           }
         },
         "icon-4": {
           "type": "item",
+          "disabled": true,
           "settings": {
-            "icon": "picto-award-gift",
+            "icon": "picto-credit-card",
             "icon_width": 24,
             "mobile_icon_width": 24,
             "title": "Secure payments",
