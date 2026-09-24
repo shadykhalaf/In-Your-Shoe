@@ -76,8 +76,8 @@
         "newsletter": {
           "type": "newsletter",
           "settings": {
-            "title": "Newsletter",
-            "content": "<p>Sign up to our newsletter to receive exclusive offers.</p>",
+            "title": "a <em><strong>Cool Decision</strong></em> is what you are about to make!",
+            "content": "<h6>Join Our Cool Family and receive a 10% Off Code For Your First Purchase</h6>",
             "button_background": "",
             "button_text_color": ""
           }
@@ -85,19 +85,28 @@
         "links": {
           "type": "links",
           "settings": {
-            "menu": "footer",
-            "collapse_on_mobile": false,
+            "menu": "branches-footer",
+            "collapse_on_mobile": true,
             "show_menu_title": true,
-            "menu_title": ""
+            "menu_title": "Our Branches"
+          }
+        },
+        "links_GWXwAc": {
+          "type": "links",
+          "settings": {
+            "menu": "info",
+            "collapse_on_mobile": true,
+            "show_menu_title": true,
+            "menu_title": "Quick Links"
           }
         },
         "links_PxVXQQ": {
           "type": "links",
           "settings": {
             "menu": "brand-menu",
-            "collapse_on_mobile": false,
+            "collapse_on_mobile": true,
             "show_menu_title": true,
-            "menu_title": ""
+            "menu_title": "Customer Care"
           }
         },
         "text": {
@@ -112,6 +121,7 @@
       "block_order": [
         "newsletter",
         "links",
+        "links_GWXwAc",
         "links_PxVXQQ",
         "text"
       ],
