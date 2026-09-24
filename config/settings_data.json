@@ -11,7 +11,7 @@
   "current": {
     "icon_stroke_width": 1.7,
     "section_vertical_spacing": "sm",
-    "default_color_scheme": "scheme-3",
+    "default_color_scheme": "scheme-1",
     "product_rating_color": "#1c1c1c",
     "product_on_sale_accent": "#e32c2b",
     "product_sold_out_badge_background": "#efefef",
