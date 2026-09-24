@@ -70,8 +70,7 @@
         "show_country_name": false,
         "show_country_flag": true,
         "show_locale_selector": false,
-        "transparent_header_text_color": "rgba(0,0,0,0)",
-        "transparent_logo": "shopify://shop_images/LOGO_61fbafad-ad9f-41bf-b7a3-cd10342a4f51.png"
+        "transparent_header_text_color": "rgba(0,0,0,0)"
       }
     }
   },
